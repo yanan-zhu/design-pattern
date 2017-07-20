@@ -1,15 +1,15 @@
-package creational.factory.ordinary;
-
+package creational.abstract_factory;
 
 import creational.bean.Animal;
 import creational.bean.Cat;
 import creational.bean.Dog;
 
 /**
- * Created by zhuyanan on 17/7/19.
+ * Created by zhuyanan on 17/7/20.
  */
-public class AnimalsFactory {
+public class AnimalsFactory implements AbstractFactory {
 
+    @Override
     public Animal produce(String name) {
 
         if ("cat".equals(name))
@@ -18,8 +18,5 @@ public class AnimalsFactory {
             return new Dog();
         else
             return null;
-
     }
-
-
 }

@@ -1,4 +1,4 @@
-package creational.factory.bean;
+package creational.bean;
 
 /**
  * Created by zhuyanan on 17/7/20.
