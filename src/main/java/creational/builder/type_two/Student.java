@@ -1,4 +1,4 @@
-package creational.builder;
+package creational.builder.type_two;
 
 /**
  * Created by zhuyanan on 17/7/21.

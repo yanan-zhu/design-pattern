@@ -1,4 +1,7 @@
-package creational.builder;
+package creational.builder.type_one;
+
+import creational.builder.type_one.Person;
+import creational.builder.type_one.PersonBuilder;
 
 /**
  * Created by zhuyanan on 17/7/21.
