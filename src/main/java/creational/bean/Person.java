@@ -1,4 +1,4 @@
-package creational.builder.type_one;
+package creational.bean;
 
 /**
  * Created by zhuyanan on 17/7/21.
