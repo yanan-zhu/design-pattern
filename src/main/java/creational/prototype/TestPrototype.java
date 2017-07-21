@@ -11,6 +11,7 @@ public class TestPrototype {
         testPrototype();
         testSimpleCopyPrototype();
         testDeepCopyPrototype();
+        testDeepCopyBySerializePrototype();
 
     }
 
@@ -85,6 +86,35 @@ public class TestPrototype {
         System.out.println("cloned after modify:" + cloned);
 
         System.out.println("+++++++++++++++++++++++++testDeepCopyPrototype end+++++++++++++++++++++++++");
+
+
+    }
+
+    private static void testDeepCopyBySerializePrototype() {
+        System.out.println("+++++++++++++++++++++++++testDeepCopyBySerializePrototype start+++++++++++++++++++++++++");
+
+        Prototype prototype = new Prototype();
+        prototype.setName("lily");
+
+        DeepCopyBySerializeProtoType based = new DeepCopyBySerializeProtoType();
+
+        based.setId("11");
+        based.setPrototype(prototype);
+
+        DeepCopyBySerializeProtoType cloned = (DeepCopyBySerializeProtoType) based.deepClone();
+
+        System.out.println("based first:" + based);
+
+        System.out.println("cloned first:" + cloned);
+
+
+        based.getPrototype().setName("tom");
+
+        System.out.println("based after modify:" + based);
+
+        System.out.println("cloned after modify:" + cloned);
+
+        System.out.println("+++++++++++++++++++++++++testDeepCopyBySerializePrototype end+++++++++++++++++++++++++");
 
 
     }

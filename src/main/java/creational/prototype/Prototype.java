@@ -1,9 +1,11 @@
 package creational.prototype;
 
+import java.io.Serializable;
+
 /**
  * Created by zhuyanan on 17/7/21.
  */
-public class Prototype implements Cloneable {
+public class Prototype implements Cloneable, Serializable {
 
     private String name;
 
