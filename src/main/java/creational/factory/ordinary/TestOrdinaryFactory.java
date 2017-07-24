@@ -1,7 +1,7 @@
 package creational.factory.ordinary;
 
 
-import creational.bean.Animal;
+import bean.Animal;
 
 /**
  * Created by zhuyanan on 17/7/20.

@@ -1,6 +1,6 @@
 package creational.builder.type_one;
 
-import creational.bean.Person;
+import bean.Person;
 
 /**
  * Created by zhuyanan on 17/7/21.

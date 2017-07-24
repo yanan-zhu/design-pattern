@@ -1,9 +1,9 @@
 package creational.factory.ordinary;
 
 
-import creational.bean.Animal;
-import creational.bean.Cat;
-import creational.bean.Dog;
+import bean.Animal;
+import bean.Cat;
+import bean.Dog;
 
 /**
  * Created by zhuyanan on 17/7/19.

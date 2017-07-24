@@ -1,7 +1,7 @@
 package creational.abstract_factory;
 
-import creational.bean.Animal;
-import creational.bean.Fish;
+import bean.Animal;
+import bean.Fish;
 
 /**
  * Created by zhuyanan on 17/7/20.

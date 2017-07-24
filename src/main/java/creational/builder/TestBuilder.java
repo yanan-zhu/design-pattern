@@ -1,6 +1,6 @@
 package creational.builder;
 
-import creational.bean.Person;
+import bean.Person;
 import creational.builder.type_one.PersonDirector;
 import creational.builder.type_one.TomBuilder;
 import creational.builder.type_two.Student;

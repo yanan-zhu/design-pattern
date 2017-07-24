@@ -1,6 +1,6 @@
 package creational.factory.static_method;
 
-import creational.bean.Animal;
+import bean.Animal;
 
 /**
  * Created by zhuyanan on 17/7/20.
