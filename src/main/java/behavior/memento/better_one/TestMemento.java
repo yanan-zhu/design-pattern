@@ -1,4 +1,4 @@
-package behavior.memento;
+package behavior.memento.better_one;
 
 /**
  * Created by zhuyanan on 17/8/14.
@@ -9,19 +9,17 @@ public class TestMemento {
 
 
         Originator originator = new Originator();
-
         originator.setState("start!");
 
-        Caretaker caretaker = new Caretaker();
-        caretaker.saveMemento(originator.createMemento());
 
-
-        originator.setState("stop!");
+        MementoInterface memento = originator.createMemento();
 
         System.out.println(originator.getState());
 
-        originator.restoreMemento(caretaker.retrieveMemento());
+        originator.setState("stop");
+        System.out.println(originator.getState());
 
+        originator.restoreMemento(memento);
         System.out.println(originator.getState());
 
 

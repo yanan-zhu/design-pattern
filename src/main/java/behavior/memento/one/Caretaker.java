@@ -1,4 +1,4 @@
-package behavior.memento;
+package behavior.memento.one;
 
 /**
  * Created by zhuyanan on 17/8/14.
