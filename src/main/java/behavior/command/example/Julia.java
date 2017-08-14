@@ -13,19 +13,25 @@ public class Julia {
 
         //command
         Command playCommand = new PlayCommand(audioPlayer);
-        Command remindCommand = new RewindCommand(audioPlayer);
+        Command rewindCommand = new RewindCommand(audioPlayer);
         Command stopCommand = new StopCommand(audioPlayer);
 
         //invoker
         Keyboard keyboard = new Keyboard();
 
         keyboard.setPlayCommand(playCommand);
-        keyboard.setRewindCommand(remindCommand);
+        keyboard.setRewindCommand(rewindCommand);
         keyboard.setStopCommand(stopCommand);
 
         keyboard.play();
         keyboard.rewind();
         keyboard.stop();
+
+        MacroAudioCommand macroAudioCommand = new MacroAudioCommand();
+        macroAudioCommand.add(playCommand);
+        macroAudioCommand.add(rewindCommand);
+        macroAudioCommand.add(stopCommand);
+        macroAudioCommand.execute();
 
 
     }
